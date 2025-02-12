@@ -123,6 +123,33 @@
   <body>
     <!-- Rest of the HTML remains exactly the same -->
     <div class="center">
+      <div id="open_txt">
+        <h1>Hi Beautiful❤️</h1>
+        <p>
+          Thank you for letting me into your life and grow closer to you these
+          past months.<br />
+          <br />
+
+          Your smile always cheers me up and makes me feel at home :))<br />
+          <br />
+
+          I love you so much and am so glad you are in my life!<br />
+          <br />
+
+          I miss you so much and cannot wait for you to come visit!<br />
+          <br />
+
+          I know this past few weeks have taken some getting used to, but I know
+          we can make it through it :)) <br />
+          <br />
+
+          Since I cannot be with you today I wanted to make you a little
+          something instead! <br />
+          <br />
+
+          If you choose to, click the button below 🤭
+        </p>
+      </div>
       <button id="button1">Click Me!</button>
     </div>
 
@@ -156,6 +183,7 @@
 
     <script>
       // JavaScript remains exactly the same
+      const header = document.getElementById("open_txt");
       const question = document.getElementById("question");
       const button1 = document.getElementById("button1");
       const buttonNo = document.getElementById("button_no");
@@ -166,6 +194,7 @@
 
       button1.addEventListener("click", function () {
         this.style.display = "none";
+        header.style.display = "none";
         question.style.display = "block";
       });
 
